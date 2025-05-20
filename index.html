@@ -12,19 +12,98 @@
 	<link rel="stylesheet" href="assets/css/johndoe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <h4 class="header-subtitle" >Hi, Welcome to</h4>
-                &nbsp
-                <h1 class="header-title">HirePlus</h1>
-                <h6 class="header-mono" >Machine Learning | Natural language processing  | Based Recruitment Automation System
-
-</h6><p> <h6> AI Bot to Increase the Accuracy and Efficiency of Hiring Process of Business Organizations </h6></p>
-                <!-- <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button> -->
+                <h4 class="header-subtitle">Hi, Welcome to</h4>
+                <h1 class="header-title">DiverseMind</h1>
+                <h6 class="header-mono">Writing Abilities | Mathematical Skills | Short-term Memory | Attention Span</h6>
+                <p><h6 class="header-mono1">An Integrated Framework for Children with Multi-Dimensional Challenges as Slow Learners</h6></p>
             </div>
         </div>
     </header>
+
+    <style>
+        .header {
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/imgs/kidHome.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .header .container {
+            position: relative;
+            height: 100%;
+        }
+        .header .header-content {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 55%;
+            transform: translateY(-50%);
+            color: #fff;
+        }
+        .header .header-content .header-subtitle {
+            font-weight: 200;
+            font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+        }
+        .header .header-content .header-title {
+            font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+            font-weight: bold;
+            line-height: .7;
+            margin-bottom: 25px;
+            background: linear-gradient(to right, #ff6f00, #ff7f00, #F85C70, #F85C70, #F85C70, #F85C70);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header .header-content .header-mono {
+            letter-spacing: 5px;
+            font-weight: 500;
+            font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+            margin-bottom: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #fff;
+            animation: typing 9s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+        }
+        .header .header-content .header-mono1 {
+            letter-spacing: 2px;
+            font-weight: 300;
+            font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+            margin-bottom: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        @keyframes typing {
+            0% { width: 0; }
+            50% { width: 100%; }
+            100% { width: 0; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #fff; }
+        }
+        @media (max-width: 767.98px) {
+            .header {
+                height: 500px;
+                min-height: 500px;
+            }
+            .header .header-content {
+                padding: 20px;
+            }
+            .header .header-content .header-mono {
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+
+
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -441,53 +520,69 @@ functionality, and real-world validation before commercialization.</P>
     <section class="section" id="technologies">
         <div class="container">
             <h2 class="mb-5 pb-4"><span class="text-danger">Used</span> Technologies</h2>
-                <div class="row tech-grid">
-                    <div class="col-md-2 col-sm-4 col-6 tech-item">
+            <div class="row tech-grid">
+                <div class="col-md-2 col-sm-4 col-6 tech-item">
                     <a href="https://www.python.org/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
-                        <p>Python</p>
+                        <div class="tech-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+                            <p>Python</p>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 tech-item">
                     <a href="https://www.tensorflow.org/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow Logo">
-                        <p>TensorFlow</p>
+                        <div class="tech-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow Logo">
+                            <p>TensorFlow</p>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 tech-item">
                     <a href="https://opencv.org/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV Logo">
-                        <p>OpenCV</p>
+                        <div class="tech-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV Logo">
+                            <p>OpenCV</p>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 tech-item">
                     <a href="https://scikit-learn.org/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn Logo">
-                        <p>Scikit-learn</p>
+                        <div class="tech-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn Logo">
+                            <p>Scikit-learn</p>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 tech-item">
                     <a href="https://mediapipe.dev/" target="_blank">
-                        <img src="https://logo.svgcdn.com/s/mediapipe-dark.svg" alt="MediaPipe Logo">
-                        <p>MediaPipe</p>
+                        <div class="tech-card">
+                            <img src="https://logo.svgcdn.com/s/mediapipe-dark.svg" alt="MediaPipe Logo">
+                            <p>MediaPipe</p>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 tech-item">
                     <a href="https://reactjs.org/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
-                        <p>React</p>
+                        <div class="tech-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+                            <p>React</p>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 tech-item">
                     <a href="https://fastapi.tiangolo.com/" target="_blank">
-                        <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI Logo">
-                        <p>FastAPI</p>
+                        <div class="tech-card">
+                            <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI Logo">
+                            <p>FastAPI</p>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 tech-item">
                     <a href="https://www.mongodb.com/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB Logo">
-                        <p>MongoDB</p>
+                        <div class="tech-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB Logo">
+                            <p>MongoDB</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -495,334 +590,450 @@ functionality, and real-world validation before commercialization.</P>
     </section>
 
     <style>
-    .tech-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
 
-    .tech-item {
-        text-align: center;
-        transition: transform 0.3s ease;
-    }
+        .tech-item {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.6s forwards;
+            animation-delay: calc(var(--order) * 0.2s);
+        }
 
-    .tech-item img {
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
-        margin-bottom: 10px;
-    }
+        .tech-card {
+            background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    .tech-item p {
-        margin: 0;
-        font-size: 1rem;
-        color: #212529;
-        font-weight: 600;
-    }
-
-    .tech-item a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .tech-item:hover {
-        transform: translateY(-5px);
-    }
-
-    .tech-item a:hover p {
-        color: #f51330;
-    }
-
-    @media (max-width: 767.98px) {
         .tech-item img {
-            width: 60px;
-            height: 60px;
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
         }
 
         .tech-item p {
-            font-size: 0.9rem;
-        }
-    }
-
-    @media (max-width: 575.98px) {
-        .tech-item img {
-            width: 50px;
-            height: 50px;
+            margin: 0;
+            font-size: 1rem;
+            color: #212529;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
 
-        .tech-item p {
-            font-size: 0.8rem;
+        .tech-item a {
+            color: inherit;
+            text-decoration: none;
         }
-    }
+
+        .tech-item:hover .tech-card {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(245, 19, 48, 0.2);
+        }
+
+        .tech-item:hover img {
+            box-shadow: 0 0 15px rgba(245, 19, 48, 0.5);
+        }
+
+        .tech-item:hover p {
+            color: #f51330;
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 767.98px) {
+            .tech-item img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .tech-item p {
+                font-size: 0.9rem;
+            }
+
+            .tech-card {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .tech-item img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .tech-item p {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 
     <!-- Milestones -->
-     <section class="section" id="milestones" style="background-color: #e3f4f7; padding: 60px 0;">
+    <section class="section" id="milestones" style="background-color: #ffffff; padding: 60px 0; font-family: 'Arial', sans-serif;">
         <div class="container">
             <h2 class="mb-5 pb-4 text-center"><span class="text-danger">Our</span> Milestones</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+            <div class="waveform-timeline">
+                <div class="timeline-node left">
                     <div class="timeline-content">
-                        <h4 class="timeline-date">Feb 2025</h4>
-                        <h5 class="timeline-title">Project Proposal</h5>
+                        <div class="timeline-date">Aug 2024</div>
+                        <h3 class="timeline-title">Project Proposal</h3>
                         <p class="timeline-desc">A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 6%; background-color: #28a745;">6%</div>
+                            <div class="progress-bar" style="width: 12%;">12%</div>
                         </div>
-                        <p class="timeline-marks">Marks Allocated: 6</p>
+                        <p class="timeline-marks">Marks Allocated: 12</p>
                     </div>
+                    <div class="node"></div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-node right">
                     <div class="timeline-content">
-                        <h4 class="timeline-date">March 2025</h4>
-                        <h5 class="timeline-title">Progress Presentation I</h5>
+                        <div class="timeline-date">Dec 2024</div>
+                        <h3 class="timeline-title">Progress Presentation I</h3>
                         <p class="timeline-desc">Progress Presentation I reviews the 50% completion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 6%; background-color: #28a745;">6%</div>
+                            <div class="progress-bar" style="width: 15%;">15%</div>
                         </div>
-                        <p class="timeline-marks">Marks Allocated: 6</p>
+                        <p class="timeline-marks">Marks Allocated: 15</p>
                     </div>
+                    <div class="node"></div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-node left">
                     <div class="timeline-content">
-                        <h4 class="timeline-date">March 2025</h4>
-                        <h5 class="timeline-title">Research Paper</h5>
-                        <p class="timeline-desc">Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge.</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 10%; background-color: #28a745;">10%</div>
-                        </div>
-                        <p class="timeline-marks">Marks Allocated: 10</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h4 class="timeline-date">March 2025</h4>
-                        <h5 class="timeline-title">Progress Presentation II</h5>
+                        <div class="timeline-date">March 2025</div>
+                        <h3 class="timeline-title">Progress Presentation II</h3>
                         <p class="timeline-desc">Progress Presentation II reviews the 90% completion status demonstration of the project. Along with a Poster presentation which describes the project as a whole.</p>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 18%; background-color: #28a745;">18%</div>
+                            <div class="progress-bar" style="width: 18%;">18%</div>
                         </div>
                         <p class="timeline-marks">Marks Allocated: 18</p>
                     </div>
+                    <div class="node"></div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-node right">
                     <div class="timeline-content">
-                        <h4 class="timeline-date">April 2025</h4>
-                        <h5 class="timeline-title">Website Assessment</h5>
-                        <p class="timeline-desc">The Website helps to promote our research project and reveals all details related to the project.</p>
+                        <div class="timeline-date">March 2025</div>
+                        <h3 class="timeline-title">Research Paper</h3>
+                        <p class="timeline-desc">Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge.</p>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 2%; background-color: #28a745;">2%</div>
+                            <div class="progress-bar" style="width: 10%;">10%</div>
                         </div>
-                        <p class="timeline-marks">Marks Allocated: 2</p>
+                        <p class="timeline-marks">Marks Allocated: 10</p>
                     </div>
+                    <div class="node"></div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-node left">
                     <div class="timeline-content">
-                        <h4 class="timeline-date">April 2025</h4>
-                        <h5 class="timeline-title">Logbook</h5>
-                        <p class="timeline-desc">Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 3%; background-color: #28a745;">3%</div>
-                        </div>
-                        <p class="timeline-marks">Marks Allocated: 3</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h4 class="timeline-date">May 2025</h4>
-                        <h5 class="timeline-title">Final Report</h5>
+                        <div class="timeline-date">April 2025</div>
+                        <h3 class="timeline-title">Final Report</h3>
                         <p class="timeline-desc">Final Report evaluates the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 19%; background-color: #28a745;">19%</div>
+                            <div class="progress-bar" style="width: 19%;">19%</div>
                         </div>
                         <p class="timeline-marks">Marks Allocated: 19</p>
                     </div>
+                    <div class="node"></div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-node right">
                     <div class="timeline-content">
-                        <h4 class="timeline-date">May 2025</h4>
-                        <h5 class="timeline-title">Final Presentation & Viva</h5>
+                        <div class="timeline-date">May 2025</div>
+                        <h3 class="timeline-title">Final Presentation & Viva</h3>
                         <p class="timeline-desc">Viva is held individually to assess each member's contribution to the project.</p>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 20%; background-color: #28a745;">20%</div>
+                            <div class="progress-bar" style="width: 20%;">20%</div>
                         </div>
                         <p class="timeline-marks">Marks Allocated: 20</p>
                     </div>
+                    <div class="node"></div>
+                </div>
+                <div class="timeline-node left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2025</div>
+                        <h3 class="timeline-title">Website Assessment</h3>
+                        <p class="timeline-desc">The Website helps to promote our research project and reveals all details related to the project.</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 2%;">2%</div>
+                        </div>
+                        <p class="timeline-marks">Marks Allocated: 2</p>
+                    </div>
+                    <div class="node"></div>
+                </div>
+                <div class="timeline-node right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2025</div>
+                        <h3 class="timeline-title">Logbook</h3>
+                        <p class="timeline-desc">Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 4%;">4%</div>
+                        </div>
+                        <p class="timeline-marks">Marks Allocated: 4</p>
+                    </div>
+                    <div class="node"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <style>
-    .timeline {
-        position: relative;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px 0;
-    }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mb-5 {
+            margin-bottom: 3rem;
+        }    
+        .pb-4 {
+            padding-bottom: 1.5rem;
+        }
+        .text-danger {
+            color: #F85C70;
+        }
+        .timeline-node {
+            position: relative;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .timeline-node.left {
+            flex-direction: row;
+            padding-right: 50%;
+        }
+        .timeline-node.right {
+            flex-direction: row-reverse;
+            padding-left: 50%;
+        }
+        .node {
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border: 4px solid #F85C70;
+            border-radius: 50%;
+            z-index: 2;
+            box-shadow: 0 0 0 4px rgba(248, 92, 112, 0.3);
+            transition: all 0.3s ease;
+        }
+        .timeline-node:hover .node {
+            transform: scale(1.2);
+            border-color: #28a745;
+            box-shadow: 0 0 0 6px rgba(40, 167, 69, 0.4);
+        }
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        }
+        .timeline-node.left .timeline-content {
+            margin-right: 30px;
+        }
+        .timeline-node.right .timeline-content {
+            margin-left: 30px;
+        }
+        .timeline-node:hover .timeline-content {
+            box-shadow: 0 8px 25px rgba(248, 92, 112, 0.3);
+            transform: translateY(-5px);
+        }   
+        .timeline-date {
+            display: inline-block;
+            background: #F85C70;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        } 
+        .timeline-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        } 
+        .timeline-node:hover .timeline-title {
+            color: #F85C70;
+        }
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .progress {
+            height: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #F85C70, #28a745);
+            text-align: right;
+            padding-right: 5px;
+            color: white;
+            font-size: 0.75rem;
+            line-height: 10px;
+            font-weight: bold;
+        }
+        .timeline-marks {
+            font-size: 0.9rem;
+            color: #333;
+            font-weight: 600;
+            margin: 0;
+        }
 
-    .timeline::before {
+        .waveform-timeline {
+            position: relative;
+            margin: 0 auto;
+        }
+
+    .waveform-timeline::before {
         content: '';
         position: absolute;
+        left: 50%;
         top: 0;
-        bottom: 0;
-        left: 50%;
-        width: 3px;
-        background: #000;
-        transform: translateX(-50%);
-    }
-
-    .timeline-item {
-        position: relative;
-        width: 45%;
-        margin-bottom: 30px;
-        padding: 20px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-    }
-
-    .timeline-item:nth-child(odd) {
-        margin-left: 5%;
-    }
-
-    .timeline-item:nth-child(even) {
-        margin-left: 50%;
-    }
-
-    .timeline-marker {
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        width: 12px;
-        height: 10px;
-        background: #000;
-        border: 2px solid #fff;
-        border-radius: 50%;
+        height: 100%;
+        width: 4px;
+        background: #F85C70;
         transform: translateX(-50%);
         z-index: 1;
-        transition: background 0.3s ease, transform 0.3s ease;
+        border-radius: 2px;
     }
 
-    .timeline-item:hover .timeline-marker {
+    .timeline-node::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        height: 2px;
         background: #F85C70;
-        transform: translateX(-50%) scale(1.2);
+        z-index: 1;
     }
 
-    .timeline-content {
-        padding: 15px;
+    .timeline-node.left::after {
+        left: 50%;
+        transform: translateY(-50%);
     }
 
-    .timeline-date {
-        font-size: 1rem;
-        color: #666;
-        margin-bottom: 5px;
+    .timeline-node.right::after {
+        right: 50%;
+        transform: translateY(-50%);
     }
 
-    .timeline-title {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #212529;
-        margin-bottom: 10px;
-    }
-
-    .timeline-desc {
-        font-size: 0.95rem;
-        color: #666;
-        margin-bottom: 10px;
-    }
-
-    .progress {
-        height: 10px;
-        background: #e9ecef;
-        border-radius: 5px;
-        overflow: hidden;
-        margin-bottom: 5px;
-    }
-
-    .progress-bar {
-        height: 100%;
-        text-align: right;
-        padding-right: 5px;
-        color: #fff;
-        font-size: 0.75rem;
-        line-height: 10px;
-    }
-
-    .timeline-marks {
-        font-size: 0.9rem;
-        color: #212529;
-        font-weight: 600;
-    }
-
-    .timeline-item:hover {
-        box-shadow: 0 4px 15px rgba(248, 92, 112, 0.3);
-        transform: translateY(-5px);
-    }
-
-    .timeline-item:hover .timeline-title {
-        color: #F85C70;
-    }
-
-    @media (max-width: 767.98px) {
-        .timeline::before {
-            left: 20px;
+    @media (max-width: 991px) {
+        .waveform-timeline::before {
+            left: 24px;
+            transform: none;
         }
-
-        .timeline-item {
-            width: 90%;
-            margin-left: 10%;
+        
+        .timeline-node::after {
+            display: none;
         }
-
-        .timeline-item:nth-child(odd) {
-            margin-left: 10%;
+        
+        .timeline-node {
+            padding-left: 60px !important;
         }
-
-        .timeline-item:nth-child(even) {
-            margin-left: 10%;
-        }
-
-        .timeline-marker {
+        
+        .node {
             left: 0;
             transform: translateX(0);
         }
-
-        .timeline-content {
-            padding-left: 25px;
-        }
     }
 
-    @media (max-width: 575.98px) {
-        .timeline-date {
-            font-size: 0.9rem;
+    @media (min-width: 992px) {
+        .timeline-node.left .timeline-content::before {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 10px 0 10px 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent #fff;
+            z-index: 2;
         }
-
-        .timeline-title {
-            font-size: 1.1rem;
-        }
-
-        .timeline-desc {
-            font-size: 0.85rem;
-        }
-
-        .timeline-marks {
-            font-size: 0.8rem;
+        
+        .timeline-node.right .timeline-content::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 10px 10px 10px 0;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+            z-index: 2;
         }
     }
+        
+        @media (max-width: 991px) {
+            
+            .timeline-node {
+                padding: 0 0 0 60px !important;
+                flex-direction: row !important;
+                margin-bottom: 40px;
+            }
+            
+            .timeline-node.left .timeline-content,
+            .timeline-node.right .timeline-content {
+                margin-left: 15px;
+                margin-right: 0;
+                max-width: 100%;
+            }
+            
+            .node {
+                position: absolute;
+                left: 24px;
+                transform: translateX(-50%);
+            }
+            
+            .timeline-node:hover .node {
+                transform: translateX(-50%) scale(1.2);
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .timeline-content {
+                padding: 15px;
+            }
+            
+            .timeline-title {
+                font-size: 1.1rem;
+            }
+            
+            .timeline-desc {
+                font-size: 0.85rem;
+            }
+            
+            .timeline-marks {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 
     <!-- Documents -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <section class="section" id="documents">
